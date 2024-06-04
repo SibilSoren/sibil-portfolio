@@ -23,7 +23,7 @@ function App() {
               <img
                 src={Hero}
                 alt="Sibil Sarjam Soren"
-                className="inline-block h-80 w-80 rounded-full ring-2 ring-white aspect-auto"
+                className="inline-block h-80 w-80 rounded-full ring-2 ring-white aspect-auto mx-auto"
               />
               <div className="flex flex-col text-center md:text-left  items-center md:items-start justify-center gap-10">
                 <h1 className="text-4xl font-bold ">Full Stack Developer 👋🏼</h1>
