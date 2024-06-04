@@ -7,7 +7,7 @@ html {
   scroll-behavior: smooth;
 }
 * {
-  transition: all ease-in 1000;
+  @apply transition-colors duration-100;
 }
 body {
   margin: 0;

@@ -49,16 +49,15 @@ function Navbar({ dark, setDark }) {
         <ul
           className={
             nav
-              ? "fixed md:hidden left-0 top-0 w-[100%] h-full border-r-gray-900 bg-white text-black  ease-in-out duration-500"
+              ? "fixed md:hidden left-0 top-0 w-[100%] h-full border-r-gray-900 dark:bg-black bg-white text-black  ease-in-out duration-500"
               : "ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%]"
           }
         >
           {/* Mobile Logo */}
           <div className="flex justify-end items-center px-4 pt-8 mb-4">
-            {/* <h1 className="w-full text-3xl font-bold  ">Sibil Sarjam</h1> */}
             <div
               onClick={handleNav}
-              className="block md:hidden hover:text-blue-500 cursor-pointer"
+              className="block dark:text-white md:hidden hover:text-blue-500 cursor-pointer"
             >
               <X size={20} />
             </div>
@@ -68,7 +67,7 @@ function Navbar({ dark, setDark }) {
           {navItems.map((item) => (
             <li
               key={item.id}
-              className="p-4 border-b  hover:bg-blue-300 duration-300 hover:text-black cursor-pointer border-gray-600"
+              className="p-4 border-b  hover:bg-blue-300 duration-300 hover:text-black cursor-pointer border-gray-600 dark:bg-black bg-white dark:text-white"
             >
               {item.text}
             </li>
