@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Dancing+Script:wght@400..700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  transition: all ease-in 1000;
+}
+body {
+  margin: 0;
+  /* display: flex; */
+  /* place-items: center; */
+  font-family: "Cabin", sans-serif;
+  min-width: 320px;
+  min-height: 100vh;
+}
