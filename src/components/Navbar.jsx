@@ -65,12 +65,11 @@ function Navbar({ dark, setDark }) {
 
           {/* Mobile Navigation Items */}
           {navItems.map((item) => (
-            <li
-              key={item.id}
-              className="p-4 border-b  hover:bg-blue-300 duration-300 hover:text-black cursor-pointer border-gray-600 dark:bg-black bg-white dark:text-white"
-            >
-              {item.text}
-            </li>
+            <a key={item.id} href={`#${item.text}`}>
+              <li className="p-4 border-b  hover:bg-blue-300 duration-300 hover:text-black cursor-pointer border-gray-600 dark:bg-black bg-white dark:text-white">
+                {item.text}
+              </li>
+            </a>
           ))}
         </ul>
       </div>
