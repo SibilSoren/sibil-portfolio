@@ -165,12 +165,12 @@ function App() {
                     {project.title}
                   </h1>
                   <div className="flex px-8 justify-center gap-5">
-                    <a href={project.repoLink}>
+                    <a href={project.repoLink} target="_blank">
                       <button className="bg-transparent hover:bg-blue-500 text-blue-700 dark:text-white font-semibold hover:text-white py-2 px-4 border-2 border-blue-500 dark:border-white hover:border-transparent rounded-3xl  flex items-center gap-4">
                         <Github /> Github
                       </button>
                     </a>
-                    <a href={project.liveLink}>
+                    <a href={project.liveLink} target="_blank">
                       <button className="bg-transparent hover:bg-blue-500 text-blue-700 dark:text-white font-semibold hover:text-white py-2 px-4 border-2 border-blue-500 dark:border-white hover:border-transparent rounded-3xl  flex items-center gap-4">
                         <Radio /> Live Link
                       </button>
